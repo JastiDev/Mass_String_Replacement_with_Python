@@ -37,7 +37,7 @@ class FastReplacer:
                 original_key, original_value = row[from_col], row[to_col]
                 key, value = original_key.strip(), original_value.strip()
 
-                # Debugging: Check if spaces were present before trimming
+                # Debugging: Check if spaces were present before trimming(if you dislike these log messages, you can delete 40-43 on your side.)
                 if original_key != key or original_value != value:
                     logging.info(f"✅ Trimming spaces: '{original_key}' → '{key}' | '{original_value}' → '{value}'")
 
